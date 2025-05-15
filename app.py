@@ -7,7 +7,7 @@ import re
 st.set_page_config(page_title="YouTube Comment Scraper", page_icon="📺", layout="centered")
 
 # API Key YouTube kamu
-API_KEY = "AIzaSyDX41H8PUvD-47r13MfSBK1r04h7fd1mjk"
+API_KEY = st.secrets["YOUTUBE_API_KEY"]
 
 # Fungsi ekstrak Video ID
 def extract_video_id(url):
